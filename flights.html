@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyFly - Flights</title>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="flights.css"/>
+  <link rel="stylesheet" href="vacations.css"/>
+  <link rel="stylesheet" href="tickets.css"/>
+  <link rel="stylesheet" href="auth.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">SkyFly</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="flights.html" aria-current="page">Flights</a>
+    <a href="vacations.html">Vacations</a>
+    <a href="tickets.html">My Tickets</a>
+    <a href="auth.html">Sign In</a>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="filters">
+    <input type="text" id="filterFrom" placeholder="From (e.g. LHR)"/>
+    <input type="text" id="filterTo" placeholder="To (e.g. JFK)"/>
+    <button class="btn" id="applyFilters">Apply</button>
+    <button class="btn" id="clearFilters">Clear</button>
+  </div>
+  <div id="flightsList" class="cards"></div>
+</section>
+
+<div id="drawer" class="drawer">
+  <button class="drawer-close" aria-label="Close">&times;</button>
+  <div class="drawer-body">
+    <h2 id="drawerTitle"></h2>
+    <form id="buyForm">
+      <label>Passenger full name
+        <input type="text" id="fullName" required>
+      </label>
+      <label>Card number (any 16 digits)
+        <input type="text" id="cardNo" placeholder="#### #### #### ####" required>
+      </label>
+      <label>Sort code (6 digits)
+        <input type="text" id="sortCode" placeholder="######" required>
+      </label>
+      <button class="btn primary" type="submit">Buy Ticket</button>
+    </form>
+  </div>
+</div>
+
+<footer class="site-footer">© 2025 SkyFly</footer>
+<div id="toast" class="toast"></div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="home.js"></script>
+<script src="vacations.js"></script>
+<script src="tickets.js"></script>
+<script src="flights.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>
