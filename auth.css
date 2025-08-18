@@ -1,0 +1,13 @@
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#0b0f1d;color:#f4f6ff}
+.site-header{display:flex;justify-content:space-between;align-items:center;background:#0f1430;padding:14px 18px}
+.nav a{color:#9ecbff;margin:0 8px;text-decoration:none;padding:6px 10px}
+.auth-section{max-width:400px;margin:40px auto;background:#151a2c;padding:20px;border-radius:10px}
+.tab-buttons{display:flex;gap:4px;margin-bottom:16px}
+.tab-buttons button{flex:1;padding:10px;background:#1f2a55;border:none;color:#fff;cursor:pointer}
+.tab-buttons button.active{background:#6c5ce7}
+label{display:block;margin-top:12px}
+input{width:100%;padding:8px;margin-top:4px;border-radius:6px;border:1px solid #2b3354;background:#0f1430;color:#fff}
+.btn{margin-top:16px;padding:10px 14px;background:#6c5ce7;color:#fff;border:none;border-radius:8px;cursor:pointer}
+.hidden{display:none}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:20px;background:#121a36;color:#fff;border-radius:14px;padding:12px 16px;opacity:0;transition:opacity .15s}
+.toast.show{opacity:1}
