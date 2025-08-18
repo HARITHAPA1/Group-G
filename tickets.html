@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyFly - My Tickets</title>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="flights.css"/>
+  <link rel="stylesheet" href="vacations.css"/>
+  <link rel="stylesheet" href="tickets.css"/>
+  <link rel="stylesheet" href="auth.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">SkyFly</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="vacations.html">Vacations</a>
+    <a href="tickets.html" aria-current="page">My Tickets</a>
+    <a href="auth.html">Sign In</a>
+  </nav>
+</header>
+
+<section class="section tickets-container">
+  <h2>My Tickets</h2>
+  <div id="ticketsList"></div>
+</section>
+
+<footer class="site-footer">© 2025 SkyFly</footer>
+<div id="toast" class="toast"></div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="home.js"></script>
+<script src="vacations.js"></script>
+<script src="tickets.js"></script>
+<script src="flights.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>
